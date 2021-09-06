@@ -1,0 +1,22 @@
+{
+	"name": "dpline-theme",
+	"version": "1.0.0",
+	"description": "",
+	"author": "Hada Jang",
+	"license": "GPL-2.0-or-later",
+	"main": "index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"start": "wp-scripts start",
+		"watch": "node-sass sass/ -o ./ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
+		"compile:css": "node-sass sass/ -o ./ && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
+		"lint:scss": "wp-scripts lint-style 'sass/**/*.scss'",
+		"lint:js": "wp-scripts lint-js 'js/*.js'"
+	},
+	"keywords": [],
+	"dependencies": {
+		"@wordpress/scripts": "*",
+		"axios": "^0.21.1",
+		"normalize.css": "^8.0.1"
+	}
+}

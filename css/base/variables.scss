@@ -1,0 +1,32 @@
+@mixin atSmall {
+	@media (max-width: 640px) {
+		@content;
+	}
+}
+
+@mixin atMedium {
+	@media (max-width: 960px) {
+		@content;
+	}
+}
+
+$black: #19171a;
+$primary: #05c399;
+$secondary: #5e90eb;
+$gradient: linear-gradient(to right, #05c399, #5e90eb);
+
+:root {
+	--header-height: 100px;
+	--footer-height: 80px;
+}
+
+@include atSmall {
+	:root {
+		--header-height: 70px;
+		--footer-height: 50px;
+	}
+
+	.line-break {
+		display: block;
+	}
+}

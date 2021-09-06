@@ -1,0 +1,140 @@
+.about {
+	&__reel {
+		width: 100%;
+		position: relative;
+
+		& > video {
+			width: 100%;
+		}
+	}
+
+	&__section {
+		padding-top: 14rem;
+
+		@include atSmall {
+			padding-top: 8rem;
+		}
+
+		& > h1 {
+			margin: 0;
+			text-transform: uppercase;
+			letter-spacing: 0.02em;
+
+			@include atSmall {
+				font-size: 2.4rem;
+			}
+		}
+
+		& > p {
+			padding-top: 3rem;
+
+			@include atSmall {
+				padding-top: 1.6rem;
+			}
+		}
+	}
+
+	&__section--slogan {
+		h1 {
+			font-size: 5rem;
+			border-image-source: $gradient;
+			background: $gradient;
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+
+			@include atSmall {
+				font-size: 3rem;
+				text-align: center;
+			}
+		}
+
+		h3 {
+			font-size: 2.4rem;
+			letter-spacing: 0.07em;
+			background: $gradient;
+			display: inline-block;
+			padding: 9px 22px 7px;
+			margin-top: 1.6rem;
+
+			@include atSmall {
+				background: transparent;
+				color: #fff;
+				font-size: 1.4rem;
+				letter-spacing: 0;
+				padding: 0;
+				margin-top: 1rem;
+				line-height: 1.6;
+				text-align: center;
+				display: block;
+				text-decoration: underline;
+				text-underline-position: under;
+				// text-decoration: underline solid $secondary 2px;
+			}
+		}
+	}
+	&__section--clients {
+		img {
+			margin-top: 4rem;
+
+			@include atSmall {
+				margin-top: 3rem;
+			}
+		}
+	}
+
+	&__section--history {
+		ul {
+			margin-top: 4rem;
+			margin-bottom: 50px;
+			margin-left: 20px;
+			padding-left: 40px;
+			border-left: 1px solid #ccc;
+
+			@include atSmall {
+				margin-top: 3rem;
+				margin-bottom: 30px;
+				margin-left: 20px;
+				padding-left: 30px;
+			}
+		}
+
+		li {
+			position: relative;
+			top: 55px;
+			padding: 20px 0;
+			@include atSmall {
+				top: 38px;
+			}
+
+			&::before {
+				content: '';
+				display: block;
+				width: 15px;
+				height: 15px;
+				border-radius: 2010px;
+				background-color: #fff;
+				position: absolute;
+				left: -48px;
+				top: 37px;
+
+				@include atSmall {
+					left: -38px;
+					top: 30px;
+				}
+			}
+		}
+
+		.dp-history-date {
+			font-size: 1.8rem;
+			font-weight: 300;
+			@include atSmall {
+				font-size: 1.3rem;
+			}
+		}
+
+		.dp-history {
+			font-weight: 500;
+		}
+	}
+}

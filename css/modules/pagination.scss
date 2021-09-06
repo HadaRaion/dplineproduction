@@ -1,0 +1,38 @@
+.wp-pagenavi {
+	clear: both;
+	font-size: 2rem;
+}
+
+.wp-pagenavi a,
+.wp-pagenavi span {
+	text-decoration: none;
+	border: none;
+	padding: 3px 5px;
+	margin: 4px;
+}
+
+.wp-pagenavi a:hover,
+.wp-pagenavi span.current {
+	border: none;
+	background: $gradient;
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	// border: solid;
+	// border-image-slice: 1;
+	// border-width: 1px;
+	// border-image-source: $gradient;
+}
+
+.wp-pagenavi span.current {
+	font-weight: 700;
+}
+
+.previouspostslink,
+.nextpostslink {
+	font-weight: 500;
+}
+
+.page {
+	font-weight: 500;
+}

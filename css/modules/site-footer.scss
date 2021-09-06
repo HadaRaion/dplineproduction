@@ -1,0 +1,17 @@
+.site-footer {
+	height: var(--footer-height);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid;
+	border-image-slice: 1;
+	border-image-source: $gradient;
+
+	p {
+		font-size: 1.4rem;
+
+		@include atSmall {
+			font-size: 1rem;
+		}
+	}
+}
