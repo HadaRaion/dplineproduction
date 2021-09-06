@@ -2,12 +2,13 @@
 
 <main class="site-body about">
 	<div class="about__reel">
-		<video id="dpReel" muted playsinline autoplay="autoplay" loop type="video/mp4"></video>
+		<video preload="auto" id="dpReel" muted playsinline autoplay="autoplay" loop type="video/mp4"></video>
 		<div class="scroll-down">
 			<div class="chevron"></div>
 			<div class="chevron"></div>
 			<div class="chevron"></div>
 		</div>
+
 
 	</div>
 
