@@ -32,7 +32,8 @@
 		</div>
 
 		<div class="col col--contact-form">
-			<?php echo do_shortcode('[contact-form-7 id="39" title="DPLINE PRODUCTION FORM"]'); ?>
+			<?php the_content(); ?>
+			<!-- <?php echo do_shortcode('[contact-form-7 id="39" title="DPLINE PRODUCTION FORM"]'); ?> -->
 		</div>
 
 	</div>
