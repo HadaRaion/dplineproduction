@@ -14,8 +14,8 @@
 
 	<div class="container">
 		<div class="about__section about__section--slogan">
-			<h1><span class="line-break">세상을 즐겁게 하는</span>콘텐츠를 만듭니다</h1>
-			<h3><span class="line-break">CREATING CONTENTS</span>THAT MAKE THE WORLD FUN</h3>
+			<h1><span class="line-break line-break-gradient">세상을 즐겁게 하는 </span><span class="line-break-gradient">콘텐츠를 만듭니다</span></h1>
+			<h3><span class="line-break">CREATING CONTENTS </span>THAT MAKE THE WORLD FUN</h3>
 		</div>
 
 		<!-- <div class="about__section about__section--philosophy">

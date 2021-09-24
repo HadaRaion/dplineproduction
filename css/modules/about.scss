@@ -45,6 +45,14 @@
 			@include atSmall {
 				font-size: 3rem;
 				text-align: center;
+				background: none;
+
+				.line-break-gradient {
+					background: $gradient;
+					background-clip: text;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
 			}
 		}
 

@@ -35,13 +35,18 @@ html {
 body {
 	font-family: 'GmarketSans', sans-serif;
 	display: flex;
-	min-height: 100vh;
+	min-height: calc(var(--vh, 1vh) * 100);
 	flex-direction: column;
 	overflow-x: hidden;
 	position: relative;
 	background-color: $black;
 	color: #fff;
 	font-size: 1.6rem;
+
+	&.active {
+		height: calc(var(--vh, 1vh) * 100);
+		overflow: hidden;
+	}
 }
 
 img {

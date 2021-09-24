@@ -18,7 +18,7 @@
 	}
 
 	&__logo {
-		width: 80px;
+		width: 70px;
 
 		@include atSmall {
 			width: 60px;
@@ -34,7 +34,7 @@
 			position: absolute;
 			background-color: $black;
 			right: 0;
-			height: calc(100vh - var(--header-height));
+			height: calc(var(--vh, 1vh) * 100 - var(--header-height));
 			top: var(--header-height);
 			flex-direction: column;
 			justify-content: space-evenly;
