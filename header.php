@@ -18,11 +18,11 @@
     <header class="site-header">
       <div class="container">
         <nav class="header">
-          <a class="header__logo" href="<?php echo site_url() ?>"><img src="http://dplineproduction.co/wp-content/uploads/2021/09/dpline_prod_logo.svg" alt="사이트로고" /></a>
+          <a class="header__logo" href="<?php echo site_url() ?>"><img src="http://dplineproduction.co/wp-content/uploads/2021/09/dplineprodcution_logo.svg" alt="사이트로고" /></a>
 
           <ul class="header__nav">
-            <li <?php if (is_page('works') or (get_post_type() == 'work')) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/work') ?>">works</a></li>
             <li <?php if (is_page('about')) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/about') ?>">about</a></li>
+            <li <?php if (is_page('works') or (get_post_type() == 'work')) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/work') ?>">works</a></li>
             <li <?php if (is_page('contact')) echo 'class="current-menu-item"' ?>><a href="<?php echo site_url('/contact') ?>">contact</a></li>
 
           </ul>
